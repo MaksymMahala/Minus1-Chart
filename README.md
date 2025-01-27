@@ -1,35 +1,28 @@
-CandleStickChart Framework
+# Candlestick Chart in Swift
 
-Overview
+A **Candlestick Chart** is a financial chart used to represent price movements of an asset, such as stocks, over a specified time period. Each candlestick consists of four key components:
+- **Open**: The price at the start of the time period.
+- **Close**: The price at the end of the time period.
+- **High**: The highest price during the time period.
+- **Low**: The lowest price during the time period.
 
-CandleStickChart is a lightweight and customizable Swift framework for creating candlestick charts. It is designed to help developers quickly integrate financial charting functionality into their iOS applications with minimal effort.
+This chart is popular in trading applications as it provides detailed insights into market trends and price action.
 
-Features
+## Features
+- **Visual Representation**:
+  - Green candles for price increases (Close > Open).
+  - Red candles for price decreases (Close < Open).
+- **Interactive**: Zoom and pan support to explore historical data.
+- **Customizable**: Configure colors, candle width, and axis styles.
+- **Real-Time Updates**: Support for live market data integration.
 
-Highly Customizable: Adjust colors, line styles, axis labels, and more to fit your application's theme.
+## Implementation in Swift
+### Libraries
+To simplify candlestick chart creation, consider using third-party chart libraries like:
+1. [Charts](https://github.com/danielgindi/Charts) - A powerful data visualization library for iOS.
+2. [SwiftUI Charts](https://developer.apple.com/documentation/charts) - Built-in charting framework for iOS 16+.
 
-Interactive: Supports pinch-to-zoom, panning, and tap gestures for better user experience.
-
-Data Handling: Easily display open, high, low, and close (OHLC) data points for financial instruments.
-
-Performance: Optimized for handling large datasets efficiently.
-
-Accessibility: Built with accessibility in mind to ensure compatibility with VoiceOver and other assistive technologies.
-
-Installation
-
-Swift Package Manager (SPM)
-
-In Xcode, go to File > Add Packages.
-
-Enter the repository URL: https://github.com/yourusername/CandleStickChart.git.
-
-Choose the version rule and add the package to your project.
-
-Manual Installation
-
-Clone the repository.
-
-Drag and drop the CandleStickChart folder into your Xcode project.
-
-Ensure that the framework is added to your target's Linked Frameworks and Libraries.
+### Steps to Create a Candlestick Chart
+1. **Import the Library**:
+   ```swift
+   import Charts
